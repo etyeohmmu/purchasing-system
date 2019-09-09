@@ -43,7 +43,6 @@ def about(request):
         {
             'title':'Purchasing System (2019)',
             'message':'This application processes purchases of an organization.',
-            'year':datetime.now().year,
         }
     )
 
