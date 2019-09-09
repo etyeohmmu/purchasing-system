@@ -41,8 +41,21 @@ def about(request):
         request,
         'app/about.html',
         {
-            'title':'Purchasing System',
+            'title':'Purchasing System (2019)',
             'message':'This application processes purchases of an organization.',
+            'year':datetime.now().year,
+        }
+    )
+
+def demo(request):
+    """Renders the demo page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/demo.html',
+        {
+            'title':'Purchasing System Demo',
+            'message':'This is a demo page.',
             'year':datetime.now().year,
         }
     )
